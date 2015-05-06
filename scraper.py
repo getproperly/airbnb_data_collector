@@ -35,13 +35,13 @@ class AirbnbScraper:
         return r
 
     def crawl(self):
-        price_min = 0
+        price_min = 300
         while price_min < 401:
             
             if price_min == 400:
                 price_max = 9999
             else:
-                price_max = price_min + 24
+                price_max = price_min + 100
 
             offset = 0
             count = 999
